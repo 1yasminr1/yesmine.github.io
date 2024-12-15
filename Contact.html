@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+   <script type="text/javascript"
+   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+   </script>
+   <script type="text/javascript">
+   (function(){
+   emailjs.init("uwNDc7ecBEHoZ5Wg8");
+   })();
+   </script>
+   <script src="script.js"> </script>
+</head>
+<body>
+    <header >
+        <a href="index.html"> Actualité</a>
+        <a href="carriére.html">Carrière</a>
+        <a href="Maitrise.html">Maîtrise</a>
+        <a href="expérience.html">Expériences</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Projet.html">Les projets</a>
+        <a href="centreintéret.html">Centre d'intérêt</a>
+        <a href="Quiz.html">Quiz</a>
+    </header>
+    <div class="contact-container">
+        <h1>Contact</h1>
+        <p>Une remarque ? Une suggestion ? N’hésitez pas à m’écrire.</p>
+        <form id="contactForm">
+            <label for="name">Votre nom (obligatoire)</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Mon e-mail (obligatoire)</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="subject">Sujet</label>
+            <input type="text" id="subject" name="subject">
+            
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" onclick="sendMail()">Envoyer</button>
+        </form>
+        <div id="responseMessage"></div>
+    </div>
+    
+    
+</body>
+</html>

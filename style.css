@@ -1,0 +1,438 @@
+header {
+    background-color: #488d51; 
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-style: oblique;
+    margin-bottom: 30px;
+    
+}
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+header a:hover {
+    color: #1e3408; 
+    text-shadow: 1px 1px 2px #000; 
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500vh; 
+}
+body{
+    background-image: url('image/IMG_9378.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.cv-image img {
+    width: 230px; 
+    height: 300px; 
+    border-radius: 100px; 
+    display: flex;
+    justify-content: left;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.cv-container {
+    font-size: 30px;
+    font-weight: bold; 
+    color: #cfcccc; 
+    font-style: normal;
+    display: flex; 
+    align-items: center; 
+    gap: 50px; 
+    margin-top: 40px; 
+    margin-left: 0px;  
+}
+.cv-content {
+    font-size: 19px;
+    line-height: 1.5; 
+    color: #100e0e; 
+    margin: 0; 
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    font-style: normal;
+}
+.adresse {
+    float: right;
+    margin-top: 10px; 
+}
+.adresse a {
+    color: #050e18;
+    text-decoration: none; 
+    margin-bottom: 1px;
+    font-size: 1px; 
+    display: flex; 
+    align-items: center; 
+}
+.adresse a i {
+    margin-right: 5px; 
+    font-size: 1.3rem;
+}
+
+/* ------------------------------------Page carriére -----------------------------------------------------------*/
+.parcours-container {
+    display: flex;
+    gap: 40px;
+    
+}
+.parcours {
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.parcours-info h2 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.parcours-info p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+.mention {
+    font-style: italic;
+    color: #7f8c8d;
+}
+.parcours-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.parcours-image img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* ------------------------------------Page Maitrise  -----------------------------------------------------------*/
+.skills-container {
+    background: rgb(242, 244, 245);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 60px;
+}
+
+.skills-header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    color: #666;
+    
+}
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+.skill-column {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.progress-bar-container {
+    width: 55%;
+    background: #a9d7c3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.progress-bar {
+    height: 10px;
+    background: #298b62;
+    border-radius: 10px;
+}
+/*-----------------------------------------------page expérience ---------------------------------------------*/
+.content {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.stage-card, .attestation-card {
+    background-color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stage-card:hover, .attestation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #488d51;
+    color: white;
+    padding: 20px;
+    border-bottom: 2px solid #488d51;
+}
+.card-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.card-header p {
+    font-size: 1rem;
+}
+.card-body {
+    padding: 20px;
+    font-size: 1rem;
+}
+.attestation-card {
+    background-color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.attestation-card h3 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.attestation-card p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.attestation-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .stage-card, .attestation-card {
+        margin: 15px 0;
+        padding: 15px;
+    }
+
+    .attestation-img {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+}
+/*---------------------------------------page projet -----------------------------------------------------*/
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #488d51;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.status {
+    font-weight: bold;
+    color: #488d51;
+}
+/*---------------------------------------center d'interet--------------------------------------------------*/
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+main {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #024d0c;
+    border-bottom: 2px solid #488d51;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item h3 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.item p {
+    margin: 0;
+    color: #555;
+}
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+ol li, ul li {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li h3 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+li p {
+    margin: 0;
+    color: #555;
+}
+/*-----------------------------------------------Quiz-----------------------------------------------------------*/
+.quiz-container {
+    margin: 40px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.quiz-container h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.quiz-container label {
+    font-size: 16px;
+    color: #131714;
+    display: block;
+    margin: 5px 0;
+}
+
+.quiz-container button {
+    background-color: #206732;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quiz-container button:hover {
+    background-color: #506359;
+}
+
+.quiz-container p {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/*----------------------------------------Contact----------------------------------------------------*/
+.contact-container {
+    max-width: 600px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #488d51;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;     
+    padding: 10px 20px;   
+          
+    
+   /* transition: background-color 0.3s ease;*/
+}
+
+button:hover {
+    background-color: #6b7783;
+}
+
+#responseMessage {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #488d51;
+}
+
+
+
+
+
+
+
+
+
